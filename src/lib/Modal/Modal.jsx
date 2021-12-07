@@ -8,12 +8,20 @@ export default function Modal({ show, close, iconClose, title, children }) {
         className={`${styles.overlay} ${show ? styles.show : ""} `}
         onClick={() => close()}
       >
-        <div onClick={(e) => e.stopPropagation()}>
-          {title ? <h2>{title}</h2> : null}
-          <button onClick={() => close()}>
-            {iconClose ? <img src={iconClose} alt="close" /> : <span>❌</span>}
+        <div className={styles.content} onClick={(e) => e.stopPropagation()}>
+          {title ? <h2 className={styles.title}>{title}</h2> : null}
+          <button className={styles.close} onClick={() => close()}>
+            {iconClose ? (
+              <img
+                className={styles.closeContent}
+                src={iconClose}
+                alt="close"
+              />
+            ) : (
+              <span className={styles.closeContent}>❌</span>
+            )}
           </button>
-          {children ? <div>{children}</div> : null}
+          {children ? <div className={styles.body}>{children}</div> : null}
         </div>
       </div>
     </>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "./lib";
+import "./App.css";
 
 function App() {
   const [modal, setModal] = useState(false);
@@ -13,9 +14,6 @@ function App() {
 
       <Modal show={modal} close={trigger} title="Dynamic title">
         <p>Modal content with children</p>
-        <div>child</div>
-        <div>child</div>
-        <div>child</div>
       </Modal>
     </>
   );
