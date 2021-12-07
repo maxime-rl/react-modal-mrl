@@ -1,6 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Modal.module.css";
 
+/**
+ * @param {boolean} show
+ * @param {func} close
+ * @param {string} iconClose
+ * @param {string} title
+ * @param {node} children
+ * @returns {ReactElement}
+ */
 export default function Modal({ show, close, iconClose, title, children }) {
   return (
     <>
@@ -27,3 +36,11 @@ export default function Modal({ show, close, iconClose, title, children }) {
     </>
   );
 }
+
+Modal.propTypes = {
+  show: PropTypes.bool.isRequired,
+  close: PropTypes.func.isRequired,
+  iconClose: PropTypes.string,
+  title: PropTypes.string,
+  children: PropTypes.node,
+};

@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Modal } from "./lib";
 import "./App.css";
 
+/**
+ * Modal component rendering example
+ * @returns {ReactElement}
+ */
 function App() {
   const [modal, setModal] = useState(false);
   const trigger = () => setModal(!modal);
