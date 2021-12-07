@@ -2,6 +2,17 @@
   "name": "react-modal-mrl",
   "version": "0.1.0",
   "private": true,
+  "description": "simple react modal component",
+  "author": "Maxime-rl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guillaume-Gozillon/datatable-p14.git"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -38,6 +49,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "prettier": "^2.5.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3"
