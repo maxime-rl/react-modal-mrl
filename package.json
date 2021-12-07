@@ -1,12 +1,13 @@
 {
   "name": "react-modal-mrl",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "description": "simple react modal component",
   "author": "Maxime-rl",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Guillaume-Gozillon/datatable-p14.git"
+    "url": "https://github.com/maxime-rl/react-modal-mrl"
   },
   "keywords": [
     "react",
