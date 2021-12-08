@@ -41,6 +41,6 @@ Modal.propTypes = {
   show: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
   iconClose: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };

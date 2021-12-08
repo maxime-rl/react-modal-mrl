@@ -15,9 +15,10 @@ function App() {
       <button className="click-me" onClick={() => trigger()}>
         Click me
       </button>
-
       <Modal show={modal} close={trigger} title="Dynamic title">
         <p>Modal content with children</p>
+        <p>Child</p>
+        <p>Child</p>
       </Modal>
     </>
   );
