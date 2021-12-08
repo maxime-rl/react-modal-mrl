@@ -1,6 +1,6 @@
 {
   "name": "react-modal-mrl",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "license": "MIT",
   "description": "simple react modal component",
@@ -18,7 +18,9 @@
   "keywords": [
     "react",
     "modal",
-    "component"
+    "component",
+    "plugin",
+    "pop-up"
   ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
