@@ -5,12 +5,12 @@ import styles from "./Modal.module.css";
 /**
  * @param {boolean} show
  * @param {func} close
- * @param {string} iconClose
+ * @param {string} closeIcon
  * @param {string} title
  * @param {node} children
  * @returns {ReactElement}
  */
-export default function Modal({ show, close, iconClose, title, children }) {
+export default function Modal({ show, close, closeIcon, title, children }) {
   return (
     <>
       <div
@@ -20,10 +20,10 @@ export default function Modal({ show, close, iconClose, title, children }) {
         <div className={styles.content} onClick={(e) => e.stopPropagation()}>
           {title ? <h2 className={styles.title}>{title}</h2> : null}
           <button className={styles.close} onClick={() => close()}>
-            {iconClose ? (
+            {closeIcon ? (
               <img
                 className={styles.closeContent}
-                src={iconClose}
+                src={closeIcon}
                 alt="close"
               />
             ) : (
@@ -40,7 +40,7 @@ export default function Modal({ show, close, iconClose, title, children }) {
 Modal.propTypes = {
   show: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
-  iconClose: PropTypes.string,
+  closeIcon: PropTypes.string,
   title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };
