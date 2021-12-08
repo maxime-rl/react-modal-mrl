@@ -10,21 +10,21 @@ Simple modal component for React apps
 
 ## getting started guide
 
-#### Requirements specification
+**Requirements specification**
 
 - React 17.0.2<br>
 
-#### Download
+**Download**
 
 [react-modal-mrl](https://www.npmjs.com/package/react-modal-mrl)
 
-#### Installation
+**Installation**
 
 - `npm i react-modal-mrl`<br>
   or<br>
 - `yarn add react-modal-mrl`
 
-#### Usage
+**Usage**
 
 Import it in your React component<br>
 
@@ -35,9 +35,9 @@ import { Modal } from "react-modal-mrl";
 3 props required to work: `show`, `close` and `title`<br>
 And create a function to change the state of the modal, ex: trigger()
 
-#### 1.Exemple
+**1.Exemple**
 
-```js
+```jsx
   const [modal, setModal] = useState(false);
   const trigger = () => setModal(!modal);
 
@@ -48,9 +48,12 @@ And create a function to change the state of the modal, ex: trigger()
   <Modal show={modal} close={trigger} title="Modal title"></Modal>
 ```
 
-#### 2.Exemple
+**2.Exemple**
 
-```js
+1 optional prop is available to use a customizable close icon: `closeIcon`<br>
+And addition of children possible
+
+```jsx
   const [modal, setModal] = useState(false);
   const trigger = () => setModal(!modal);
 
@@ -58,8 +61,12 @@ And create a function to change the state of the modal, ex: trigger()
     Click me
   </button>
 
-  <Modal show={modal} close={trigger} title="Successfully registered">
-    // Modal content with children
+  <Modal
+    show={modal}
+    close={trigger}
+    closeIcon={closeIcon}
+    title="Successfully registered">
+    // Modal containing an example of children
     <ul>
       <li>{user.firstName}</li>
       <li>{user.lastName}</li>
