@@ -1,13 +1,12 @@
 {
   "name": "react-modal-mrl",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "private": false,
   "license": "MIT",
   "description": "simple react modal component",
   "author": "Maxime-rl",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
