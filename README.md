@@ -66,7 +66,7 @@ And addition of children possible
     close={trigger}
     closeIcon={closeIcon}
     title="Successfully registered">
-    // Modal content containing an example of children
+    // Modal containing an example of children
     <ul>
       <li>{user.firstName}</li>
       <li>{user.lastName}</li>
