@@ -10,16 +10,85 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6rem;
+  color: #1c1c1c;
 }
 
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.click-me {
-  padding: 0.5rem 1.5rem;
+.trigger-modal {
+  margin: 0.5rem;
+  padding: 1.5rem 2.5rem;
+  min-width: 15rem;
+  font-size: 1.5rem;
   cursor: pointer;
+}
+
+.modal__subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-input {
+  margin: 0.5rem 0;
+  height: 2.8rem;
+}
+
+.modal__form-input--first-name {
+  grid-area: first-name;
+}
+
+.modal__form-input--last-name {
+  grid-area: last-name;
+}
+
+.modal__form-input--zip-code {
+  grid-area: zip-code;
+}
+
+.modal__form-input--department {
+  grid-area: department;
+}
+
+.modal__form-button {
+  grid-area: submit-button;
+  margin: 1.2rem 0 0.5rem 0;
+  height: 3.32rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 350px) {
+  #root {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .modal__subtitle {
+    margin-bottom: 2.2rem;
+  }
+
+  .modal__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "first-name last-name"
+      "zip-code department"
+      "submit-button submit-button";
+    gap: 1.5rem;
+  }
+
+  .modal__form-input {
+    margin: 0;
+  }
 }

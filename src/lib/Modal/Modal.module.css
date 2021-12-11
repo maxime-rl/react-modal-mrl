@@ -27,12 +27,8 @@
 
 .title {
   text-align: center;
-  margin: 3rem auto 1.5rem auto;
+  margin: 2rem auto 2rem auto;
   line-height: 2.8rem;
-}
-
-.body {
-  padding: 1.5rem 0;
 }
 
 .close {
