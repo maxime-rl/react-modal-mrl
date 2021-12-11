@@ -2,8 +2,11 @@
 
 Simple modal component for React apps
 
+[UI example](https://react-modal-mrl.netlify.app/)
+
 ## Features
 
+- Keyboard focus, accessibility friendly
 - Customizable trigger
 - Dynamic title and content
 - Customizable close icon (otherwise default icon)
