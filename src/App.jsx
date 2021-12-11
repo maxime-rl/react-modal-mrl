@@ -9,29 +9,17 @@ import "./App.css";
  * @returns {ReactElement}
  */
 function App() {
-  const [basicModal, setBasicModal] = useState(false);
-  const [customModal, setCustomModal] = useState(false);
-
-  const triggerBasicModal = () => setBasicModal(!basicModal);
-  const triggerCustomModal = () => setCustomModal(!customModal);
+  const [modal, setModal] = useState(false);
+  const trigger = () => setModal(!modal);
 
   return (
     <>
-      <button className="trigger-modal" onClick={() => triggerBasicModal()}>
-        Basic modal
-      </button>
-      <Modal
-        show={basicModal}
-        close={triggerBasicModal}
-        closeIcon={closeIcon}
-        title="Basic modal"
-      ></Modal>
-      <button className="trigger-modal" onClick={() => triggerCustomModal()}>
+      <button className="trigger-modal" onClick={() => trigger()}>
         Custom modal
       </button>
       <Modal
-        show={customModal}
-        close={triggerCustomModal}
+        show={modal}
+        close={trigger}
         closeIcon={closeIcon}
         title="Custom modal"
       >
