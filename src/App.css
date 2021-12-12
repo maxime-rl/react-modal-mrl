@@ -80,7 +80,7 @@ body {
 
   .modal__form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "first-name last-name"
       "zip-code department"
