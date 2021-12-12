@@ -1,6 +1,6 @@
 {
   "name": "react-modal-mrl",
-  "version": "1.1.2",
+  "version": "1.1.6",
   "private": false,
   "license": "MIT",
   "description": "simple react modal component",
@@ -26,7 +26,7 @@
     "pop-up"
   ],
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.16.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -34,8 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build_lib": "set NODE_ENV=production rimraf dist && babel src/lib --out-dir dist --copy-files",
-    "build": "react-scripts build",
+    "build": "set NODE_ENV=production rimraf dist && babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -60,6 +59,10 @@
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.4",
     "prettier": "^2.5.1",
     "prop-types": "^15.7.2",
