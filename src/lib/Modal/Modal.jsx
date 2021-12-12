@@ -70,7 +70,7 @@ export default function Modal({ show, close, closeIcon, title, children }) {
             <span className={styles.closeContent}>❌</span>
           )}
         </button>
-        {children ? <div>{children}</div> : null}
+        {children ? children : null}
       </div>
     </div>
   );
