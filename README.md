@@ -2,6 +2,8 @@
 
 Simple modal component for React apps
 
+[Netlify user interface example](https://react-modal-mrl.netlify.app/)
+
 ## Features
 
 - Keyboard focus, accessibility friendly
