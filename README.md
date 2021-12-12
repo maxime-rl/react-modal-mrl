@@ -1,8 +1,11 @@
 # react-modal-mrl
 
-Simple modal component for React apps
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/889f0c71666f4eb28d0dde813576183f)](https://www.codacy.com/gh/maxime-rl/react-modal-mrl/dashboard?utm_source=github.com&utm_medium=referral&utm_content=maxime-rl/react-modal-mrl&utm_campaign=Badge_Grade)
+![license](https://badgen.net/github/license/maxime-rl/react-modal-mrl)
+![downloads](https://badgen.net/npm/dt/react-modal-mrl)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/accdf98b-7ff4-48cf-b296-62c523295776/deploy-status)](https://app.netlify.com/sites/react-modal-mrl/deploys)
 
-[Netlify user interface example](https://react-modal-mrl.netlify.app/)
+Simple modal component for React apps
 
 ## Features
 
